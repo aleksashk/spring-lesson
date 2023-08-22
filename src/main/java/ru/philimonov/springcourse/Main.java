@@ -1,6 +1,7 @@
 package ru.philimonov.springcourse;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ru.philimonov.springcourse.beans.Car;
 
@@ -13,5 +14,7 @@ public class Main {
         System.out.println(firstBeanCar);
         System.out.println(secondBeanCar);
         System.out.println(firstBeanCar==secondBeanCar);
+
+        ApplicationContext context = new AnnotationConfigApplicationContext("ru.philimonov.springcource.beans");
     }
 }
