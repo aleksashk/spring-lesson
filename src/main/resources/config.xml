@@ -17,6 +17,7 @@
                 <value>Germany</value>
             </list>
         </property>
+        <property name="speed" value="400"/>
     </bean>
 
 </beans>
