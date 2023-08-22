@@ -2,13 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="house" class="ru.philimonov.springcourse.beans.House">
+    <bean id="house" class="ru.philimonov.springcourse.beans.House" autowire="byType">
         <property name="countOfFlats" value="200"/>
         <property name="countOfFloors" value="16"/>
     </bean>
 
     <bean id="address" class="ru.philimonov.springcourse.beans.Address">
         <constructor-arg index="0" value="Migaja"/>
-        <constructor-arg index="1" value="321"/>
+        <constructor-arg index="1" value="34566454"/>
+    </bean>
+
+    <bean id="person" class="ru.philimonov.springcourse.beans.Person" autowire="byName">
+        <property name="name" value="Ivan"/>
     </bean>
 </beans>

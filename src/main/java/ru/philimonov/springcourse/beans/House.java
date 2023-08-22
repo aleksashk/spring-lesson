@@ -8,6 +8,9 @@ public class House {
     private int countOfFlats;
     private Address address;
 
+    public House() {
+    }
+
     public int getCountOfFloors() {
         return countOfFloors;
     }
