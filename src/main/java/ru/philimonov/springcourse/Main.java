@@ -5,6 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ru.philimonov.springcourse.beans.Car;
 import ru.philimonov.springcourse.beans.Cat;
+import ru.philimonov.springcourse.beans.DataBaseConnection;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +21,8 @@ public class Main {
 
         Cat cat = context.getBean(Cat.class);
         System.out.println(cat.toString());
+
+        DataBaseConnection beanDb = context.getBean("dataBaseConnection", DataBaseConnection.class);
+        System.out.println(beanDb);
     }
 }
