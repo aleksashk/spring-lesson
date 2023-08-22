@@ -11,6 +11,12 @@
     <bean id="secondBeanCar" class="ru.philimonov.springcourse.beans.Car">
        <constructor-arg index="0" value="120"/>
        <constructor-arg index="1" value="Mercedes"/>
+        <property name="countries">
+            <list>
+                <value>Russia</value>
+                <value>Germany</value>
+            </list>
+        </property>
     </bean>
 
 </beans>
