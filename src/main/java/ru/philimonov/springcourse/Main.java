@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config.xml");
         Car firstBeanCar = applicationContext.getBean("firstBeanCar", Car.class);
-        System.out.println(firstBeanCar);
+        Car secondCar = applicationContext.getBean(Car.class);
+        System.out.println(firstBeanCar==secondCar);
     }
 }
