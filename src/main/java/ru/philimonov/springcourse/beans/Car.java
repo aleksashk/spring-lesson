@@ -5,6 +5,14 @@ public class Car {
 
     private String mark;
 
+    public Car() {
+    }
+
+    public Car(int speed, String mark) {
+        this.speed = speed;
+        this.mark = mark;
+    }
+
     public void setSpeed(int speed) {
         this.speed = speed;
     }
